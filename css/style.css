@@ -1,0 +1,431 @@
+/* Common Css Start */
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Common Css End */
+/* ============================== Nav Section Start ============================== */
+nav {
+  background-color: #02918c;
+}
+nav .container {
+  justify-content: space-between;
+  align-items: center;
+}
+nav li a {
+  font-size: 12px;
+  line-height: 61px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 0 25px;
+  transition: 0.45s;
+}
+nav li a:hover {
+  color: #cfc91d;
+}
+/* ============================== Nav Section End ============================== */
+/* ============================== Banner Section Start ============================== */
+#banner{
+
+  color:#fff;
+  background-size: cover;
+  height: 728px;
+  position: relative;
+  z-index: 1;
+}
+#banner::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, .66);
+  inset: 0;
+  z-index: -1;
+  
+}
+
+
+#banner h3{
+
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 400;
+
+  
+}
+#banner h1 {
+  font-size: 68px;
+  line-height: 75px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 30px;
+  white-space: nowrap;
+}
+#banner p{
+
+  font-size: 18px;
+  line-height: 33px;
+
+}
+#banner img{
+
+  display: block;
+  margin: 25px auto;
+}
+#banner a{
+
+  color: #000;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  padding: 15px 50px;
+  background: #cfc91d;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 30px 0;
+  display: inline-block;
+  transition: .6s;
+ 
+}
+#banner a:hover{
+
+  color: #fff;
+  background: #02918c;
+}
+/* ============================== Banner Section end ============================== */
+
+
+/* ============================== About Section Start ============================== */
+.about_info h2{
+
+  font-size: 46px;
+  font-weight: 800;
+  color: #02918c;
+  text-transform: uppercase;
+}
+.about_info p{
+
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  
+}
+.about_info p b{
+
+  font-size: 23px;
+  
+}
+#about .about_info {
+  padding: 0 100px;
+ 
+}
+#about {
+
+  padding: 100px 0;
+}
+#about .about_card{
+
+  width: 25%;
+  border-right: 2px solid #d9dbdb;
+}
+#about .about_card_wrapper{
+
+  margin-top: 100px;
+}
+
+#about .about_card_wrapper h3{
+
+  font-size: 16px;
+  line-height: 23px;
+  color: #7e8287;
+  margin:20px 0;
+ 
+}
+#about .about_card_wrapper p{
+
+  font-size: 11px;
+  line-height: 21px;
+  color: #7e8287;
+  width: 65%;
+  margin: auto;
+  
+}
+#about .about_card:last-child{
+
+  border-right-color: transparent;
+}
+
+/* ============================== About Section end ============================== */
+
+
+
+/* ============================== Survices Section Start ============================== */
+.survices_info h2{
+
+  font-size: 46px;
+  font-weight: 800;
+  color: #02918c;
+  text-transform: uppercase;
+}
+.survices_info p{
+
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  
+}
+
+#survices{
+
+  position: relative;
+  z-index: 1;
+}
+#survices .content::after{
+
+  content: "";
+  position: absolute;
+  background: rgba(240, 240, 232, .66);
+  inset: 0;
+  z-index: -1;
+}
+#survices .content{
+
+  width: 50%;
+  padding: 70px 0;
+  
+}
+
+#survices .survices_card{
+
+  width: 50%;
+  margin-top: 50px;
+  
+}
+
+#survices .survices_card_wrapper h3{
+
+  font-size: 16px;
+  line-height: 23px;
+  color: #7e8287;
+  margin:20px 0;
+ 
+}
+#survices .survices_card_wrapper p{
+
+  font-size: 11px;
+  line-height: 21px;
+  color: #7e8287;
+  width: 65%;
+  margin-left: 0;
+  
+  
+}
+
+/* ============================== Survices Section end ============================== */
+/* ============================== Work Section Start ============================== */
+#work {
+
+  padding-top: 50px;
+}
+#work .work_info{
+
+  padding: 50px 0;
+}
+
+.work_info h2{
+
+  font-size: 46px;
+  font-weight: 800;
+  color: #02918c;
+  text-transform: uppercase;
+}
+.work_info p{
+
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  width: 60%;
+  margin: auto;
+  
+}
+.work_card{
+
+  width: 25%;
+  
+}
+.work_card img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.work_card{
+
+  position: relative;
+}
+.work_card .overlay{
+
+  position: absolute;
+  inset: 20px 30px;
+  background: #02918c79;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 31px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+
+
+}
+.work_card:hover .overlay{
+
+  opacity: 1;
+  visibility: visible;
+  
+}
+.work_card .overlay h4{
+  
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  
+}
+
+.work_card .overlay p{
+
+  font-size: 11px;
+  line-height: 21px;
+  color: #ffffff;
+ 
+
+  
+}
+
+/* ============================== Work Section end ============================== */
+/* ============================== Contact Section Start ============================== */
+
+
+.contact_info{
+  padding: 60px 0;
+}
+.contact_info h2{
+
+  font-size: 46px;
+  font-weight: 800;
+  color: #02918c;
+  text-transform: uppercase;
+}
+.contact_info p{
+
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  width: 68%;
+  margin: auto;
+  
+}
+.contact_form{
+
+  background: #0b0b0b;
+  padding: 20px 0;
+  
+}
+.contact_form input{
+
+  color: #898989;
+  display: inline-block;
+  margin: auto;
+  width: 70%;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  border-bottom:1px solid #898989;
+
+}
+.contact_form input:nth-child(1){
+
+  width: 50%;
+  
+}
+.contact_form input:nth-child(2){
+
+  width: 50%;
+ 
+}
+.contact_form button{
+
+  color: #000;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  padding: 13px 60px;
+  background: #cfc91d;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 30px auto;
+  transition: .6s;
+  border:none;
+  display: block;
+}
+.contact_form button:hover{
+
+  color: #fff;
+  background: #02918c;
+}
+/* ============================== Contact Section end ============================== */
+
+/* ============================== Footer Section Start ============================== */
+
+
+#fortfolio{
+
+  background: #000;
+  padding: 20px 0;
+}
+#fortfolio h4{
+
+  color: #7e8287;
+  font-size: 12px;
+
+}
+/* ============================== Footer Section end ============================== */
+
+
+
+
+
+
+
+
+
+
+
+
